@@ -1197,22 +1197,17 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items (सर्व पदार्थ)</button>
-<button class="tab" data-cat="STARTER">🍗 Starters (स्टार्टर्स)</button>
-<button class="tab" data-cat="UKKAD">🥣 Ukkad & Soup (उकड आणि सूप)</button>
-<button class="tab" data-cat="SPECIAL THALI">🍱 Non-Veg Thali (नॉनव्हेज थाळी)</button>
-<button class="tab" data-cat="DISHES">🍲 Non-Veg Dishes (नॉनव्हेज डिशेस)</button>
-<button class="tab" data-cat="SAI SITARAM NON-VEG SPE">SAI SITARAM NON-VEG SPE</button>
-
-<button class="tab" data-cat="BIRYANI">🥘 Biryani (बिर्याणी)</button>
+<button class="tab" data-cat="SOUPS">🥣 Soups (सूप)</button>
+<button class="tab" data-cat="SNACKS">🍟 Snacks (स्नॅक्स)</button>
+<button class="tab" data-cat="BREAKFAST">🥪 Breakfast (नाश्ता)</button>
+<button class="tab" data-cat="STARTERS">🍱 Starters (स्टार्टर्स)</button>
+<button class="tab" data-cat="PANEER SPECIAL">🧀 Paneer Special (पनीर स्पेशल)</button>
+<button class="tab" data-cat="MAHARASHTRIAN SPECIAL">🥘 Maharashtrian Special (महाराष्ट्रीयन स्पेशल)</button>
 <button class="tab" data-cat="HANDI SPECIAL">🏺 Handi Special (हंडी स्पेशल)</button>
-<button class="tab" data-cat="VEG STARTER">🥦 Veg Starter (व्हेज स्टार्टर)</button>
-<button class="tab" data-cat="SAI SITARAM SPE DISH">👨‍🍳 Sitaram Special (सिताराम स्पेशल)</button>
-<button class="tab" data-cat="VEG THALI">🥗 Veg Thali (व्हेज थाळी)</button>
-<button class="tab" data-cat="VEG HANDI SPECIAL">🍲 Veg Handi (व्हेज हंडी)</button>
-<button class="tab" data-cat="VEG MAIN COURSE">🥕 Veg Main Course (व्हेज मेन कोर्स)</button>
 <button class="tab" data-cat="ROTI">🫓 Roti & Bhakri (रोटी आणि भाकरी)</button>
 <button class="tab" data-cat="RICE">🍚 Rice (राईस)</button>
-               </div>  
+<button class="tab" data-cat="NASHTA SPECIAL">☕ Tea & Coffee (चहा आणि कॉफी)</button>
+                </div>  
                 </div>
             </div>
 
@@ -1357,10 +1352,132 @@
         // Menu Data - FIXED VERSION
         const data = [
       
+  { "id": 1, "cat": "SOUPS", "name": "Cream Tomato Soup (क्रीम टोमॅटो सुप)", "price": "70/- Rs", "desc": "Creamy tomato soup", "tags": ["Veg"], "img": "img/cream_tomato_soup.jpeg" },
+  { "id": 2, "cat": "SOUPS", "name": "Tomato Soup (टोमॅटो सुप)", "price": "60/- Rs", "desc": "Fresh tomato soup", "tags": ["Veg"], "img": "img/tomato_soup.jpeg" },
+  { "id": 3, "cat": "SOUPS", "name": "Veg Manchow Soup (व्हेज मन्चाव सुप)", "price": "70/- Rs", "desc": "Spicy veg manchow soup", "tags": ["Veg"], "img": "img/veg_manchow_soup.jpeg" },
+  { "id": 4, "cat": "SNACKS", "name": "Papad Roast (पापड रोस्ट)", "price": "20/- Rs", "desc": "Roasted papad", "tags": ["Veg"], "img": "img/papad_roast.jpeg" },
+  { "id": 5, "cat": "SNACKS", "name": "Masala Papad (मसाला पापड)", "price": "35/- Rs", "desc": "Papad topped with masala", "tags": ["Veg"], "img": "img/masala_papad.jpeg" },
+  { "id": 6, "cat": "SNACKS", "name": "Papad Fry (पापड फ्राय)", "price": "30/- Rs", "desc": "Fried papad", "tags": ["Veg"], "img": "img/papad_fry.jpeg" },
+  { "id": 7, "cat": "SNACKS", "name": "Nagili Papad Roast (नागीली पापड रोस्ट)", "price": "30/- Rs", "desc": "Roasted nagili papad", "tags": ["Veg"], "img": "img/nagili_papad_roast.jpeg" },
+  { "id": 8, "cat": "SNACKS", "name": "Masala Nagili Papad (मसाला नागीली पापड)", "price": "40/- Rs", "desc": "Nagili papad with masala", "tags": ["Veg"], "img": "img/masala_nagili_papad.jpeg" },
+  { "id": 9, "cat": "SNACKS", "name": "Masala Peanuts (मसाला पीनट्स)", "price": "120/- Rs", "desc": "Spicy masala peanuts", "tags": ["Veg"], "img": "img/masala_peanuts.jpeg" },
+  { "id": 10, "cat": "BREAKFAST", "name": "Misal Pav (मिसळ पाव)", "price": "50/- Rs", "desc": "Spicy misal served with pav", "tags": ["Veg"], "img": "img/misal_pav.jpeg" },
+  { "id": 11, "cat": "BREAKFAST", "name": "Kanda Pohe (कांदा पोहे)", "price": "20/- Rs", "desc": "Traditional maharashtrian pohe", "tags": ["Veg"], "img": "img/kanda_pohe.jpeg" },
+  { "id": 12, "cat": "BREAKFAST", "name": "Chole Bhature (छोले भटोरे)", "price": "70/- Rs", "desc": "Spicy chole with fried bhature", "tags": ["Veg"], "img": "img/chole_bhature.jpeg" },
+  { "id": 13, "cat": "BREAKFAST", "name": "Bhaje (भजे)", "price": "20/- Rs", "desc": "Crispy vegetable fritters", "tags": ["Veg"], "img": "img/bhaje.jpeg" },
+  { "id": 14, "cat": "BREAKFAST", "name": "Pav Vada (पाव वडा)", "price": "15/- Rs", "desc": "Single pav with vada", "tags": ["Veg"], "img": "img/pav_vada.jpeg" },
+  { "id": 15, "cat": "BREAKFAST", "name": "Alu Vada (आलु वडा)", "price": "50/- Rs", "desc": "Potato fritters", "tags": ["Veg"], "img": "img/alu_vada.jpeg" },
+  { "id": 16, "cat": "BREAKFAST", "name": "Vada Pav (वडा पाव)", "price": "15/- Rs", "desc": "Classic vada pav", "tags": ["Veg"], "img": "img/vada_pav.jpeg" },
+
+  { "id": 17, "cat": "STARTERS", "name": "Paneer Chilli Dry (पनिर चिल्ली ड्राय)", "price": "180/- Rs", "desc": "Spicy cottage cheese with chillies", "tags": ["Veg"], "img": "img/paneer_chilli_dry.jpeg" },
+  { "id": 18, "cat": "STARTERS", "name": "Paneer Manchurian Dry (पनिर मन्चूरीयन ड्राय)", "price": "180/- Rs", "desc": "Paneer tossed in manchurian sauce", "tags": ["Veg"], "img": "img/paneer_manchurian_dry.jpeg" },
+  { "id": 19, "cat": "STARTERS", "name": "Veg Manchurian (व्हेज मन्चूरीयन)", "price": "130/- Rs", "desc": "Vegetable balls in chinese sauce", "tags": ["Veg"], "img": "img/veg_manchurian.jpeg" },
+  { "id": 20, "cat": "STARTERS", "name": "Veg Crispy (व्हेज क्रिस्पी)", "price": "150/- Rs", "desc": "Deep fried crispy vegetables", "tags": ["Veg"], "img": "img/veg_crispy.jpeg" },
+  { "id": 21, "cat": "STARTERS", "name": "Paneer Crispy (पनिर क्रिस्पी)", "price": "160/- Rs", "desc": "Crispy fried cottage cheese", "tags": ["Veg"], "img": "img/paneer_crispy.jpeg" },
+  { "id": 22, "cat": "STARTERS", "name": "Paneer Pakoda (पनिर पकोडा)", "price": "160/- Rs", "desc": "Batter fried paneer fritters", "tags": ["Veg"], "img": "img/paneer_pakoda.jpeg" },
+  { "id": 23, "cat": "STARTERS", "name": "Paneer 65 (पनिर सिक्सटी फाय)", "price": "150/- Rs", "desc": "Spicy south indian style paneer", "tags": ["Veg"], "img": "img/paneer_65.jpeg" },
+  { "id": 24, "cat": "STARTERS", "name": "Soyabean Chilli (सोयाबिन चिल्ली)", "price": "140/- Rs", "desc": "Soyabean chunks in chilli sauce", "tags": ["Veg"], "img": "img/soyabean_chilli.jpeg" },
+  { "id": 25, "cat": "STARTERS", "name": "Soyabean Kentucky (सोयाबिन कंतकी)", "price": "120/- Rs", "desc": "Crispy fried soyabean", "tags": ["Veg"], "img": "img/soyabean_kentucky.jpeg" },
+  { "id": 26, "cat": "STARTERS", "name": "Gobi Kentucky (गोबी कंतकी)", "price": "100/- Rs", "desc": "Crispy fried cauliflower", "tags": ["Veg"], "img": "img/gobi_kentucky.jpeg" },
+  { "id": 27, "cat": "STARTERS", "name": "Matki Namkeen (मटकी नमकीन)", "price": "90/- Rs", "desc": "Crispy fried sprouts", "tags": ["Veg"], "img": "img/matki_namkeen.jpeg" },
+  { "id": 28, "cat": "STARTERS", "name": "Matki Fry (मटकी फ्राय)", "price": "100/- Rs", "desc": "Stir fried spicy sprouts", "tags": ["Veg"], "img": "img/matki_fry.jpeg" },
+  { "id": 29, "cat": "STARTERS", "name": "Green Peas Fry (ग्रीन पिस फ्राय)", "price": "120/- Rs", "desc": "Fried green peas with spices", "tags": ["Veg"], "img": "img/green_peas_fry.jpeg" },
+  { "id": 30, "cat": "STARTERS", "name": "Green Peas Dry (ग्रीन पिस ड्राय)", "price": "90/- Rs", "desc": "Spiced dry green peas", "tags": ["Veg"], "img": "img/green_peas_dry.jpeg" },
+  { "id": 31, "cat": "STARTERS", "name": "Paneer Tikka (पनिर टीक्का)", "price": "190/- Rs", "desc": "Grilled marinated paneer", "tags": ["Veg"], "img": "img/paneer_tikka.jpeg" },
+  { "id": 32, "cat": "STARTERS", "name": "Paneer Malai Tikka (पनिर मलाई टीक्का)", "price": "220/- Rs", "desc": "Creamy grilled paneer", "tags": ["Veg"], "img": "img/paneer_malai_tikka.jpeg" },
+
+  { "id": 33, "cat": "PANEER SPECIAL", "name": "Paneer Kofta (पनिर कोप्ता)", "price": "210/- Rs", "desc": "Deep fried cottage cheese balls in gravy", "tags": ["Veg"], "img": "img/paneer_kofta.jpeg" },
+  { "id": 34, "cat": "PANEER SPECIAL", "name": "Paneer Pasanda (पनिर पसंदा)", "price": "190/- Rs", "desc": "Rich and creamy paneer dish", "tags": ["Veg"], "img": "img/paneer_pasanda.jpeg" },
+  { "id": 35, "cat": "PANEER SPECIAL", "name": "Paneer Matar (पनिर मटर)", "price": "170/- Rs", "desc": "Paneer with green peas", "tags": ["Veg"], "img": "img/paneer_matar.jpeg" },
+  { "id": 36, "cat": "PANEER SPECIAL", "name": "Paneer Bhurji (पनिर भुर्जी)", "price": "180/- Rs", "desc": "Scrambled cottage cheese with spices", "tags": ["Veg"], "img": "img/paneer_bhurji.jpeg" },
+  { "id": 37, "cat": "PANEER SPECIAL", "name": "Paneer Butter Masala (पनिर बटर मसाला)", "price": "190/- Rs", "desc": "Paneer in rich buttery tomato gravy", "tags": ["Veg"], "img": "img/paneer_butter_masala.jpeg" },
+  { "id": 38, "cat": "PANEER SPECIAL", "name": "Paneer Masala (पनिर मसाला)", "price": "150/- Rs", "desc": "Spicy paneer curry", "tags": ["Veg"], "img": "img/paneer_masala.jpeg" },
+  { "id": 39, "cat": "PANEER SPECIAL", "name": "Paneer Kaju Mix Masala (पनिर काजु मिक्स मसाला)", "price": "190/- Rs", "desc": "Paneer and cashew mixed curry", "tags": ["Veg"], "img": "img/paneer_kaju_mix_masala.jpeg" },
+  { "id": 40, "cat": "PANEER SPECIAL", "name": "Palak Paneer (पालक पनिर)", "price": "160/- Rs", "desc": "Paneer in spinach gravy", "tags": ["Veg"], "img": "img/palak_paneer.jpeg" },
+  { "id": 41, "cat": "PANEER SPECIAL", "name": "Tirumala Special (तिरूमला स्पेशल)", "price": "350/- Rs", "desc": "Restaurant special paneer preparation", "tags": ["Veg"], "img": "img/tirumala_special.jpeg" },
+  { "id": 42, "cat": "PANEER SPECIAL", "name": "Special Dudh Shevbhaji (स्पेशal दुध शेवभाजी)", "price": "130/- Rs", "desc": "Shev cooked in milk based gravy", "tags": ["Veg"], "img": "img/special_dudh_shevbhaji.jpeg" },
+  { "id": 43, "cat": "PANEER SPECIAL", "name": "Paneer Tikka Masala (पनिर टीक्का मसाला)", "price": "180/- Rs", "desc": "Grilled paneer in spicy gravy", "tags": ["Veg"], "img": "img/paneer_tikka_masala.jpeg" },
+  { "id": 44, "cat": "PANEER SPECIAL", "name": "Paneer Patiala (पनिर पटियाला)", "price": "200/- Rs", "desc": "Patiala style paneer curry", "tags": ["Veg"], "img": "img/paneer_patiala.jpeg" },
+  { "id": 45, "cat": "PANEER SPECIAL", "name": "Paneer Chatpata (पनिर चटपटा)", "price": "200/- Rs", "desc": "Tangy and spicy paneer dish", "tags": ["Veg"], "img": "img/paneer_chatpata.jpeg" },
+  { "id": 46, "cat": "PANEER SPECIAL", "name": "Paneer Tufani (पनिर तुफानी)", "price": "190/- Rs", "desc": "Extra spicy paneer preparation", "tags": ["Veg"], "img": "img/paneer_tufani.jpeg" },
+  { "id": 47, "cat": "PANEER SPECIAL", "name": "Shahi Paneer (शाही पनिर)", "price": "200/- Rs", "desc": "Royal creamy paneer curry", "tags": ["Veg"], "img": "img/shahi_paneer.jpeg" },
+  { "id": 48, "cat": "PANEER SPECIAL", "name": "Paneer Kadai (पनिर कढई)", "price": "190/- Rs", "desc": "Paneer cooked in a traditional kadai", "tags": ["Veg"], "img": "img/paneer_kadai.jpeg" },
+  { "id": 49, "cat": "PANEER SPECIAL", "name": "Paneer Tawa (पनिर तवा)", "price": "190/- Rs", "desc": "Tawa fried paneer with masala", "tags": ["Veg"], "img": "img/paneer_tawa.jpeg" },         
+
+{"id": 50, "cat": "MAHARASHTRIAN SPECIAL", "name": "Shevga Masala (शेवगा मसाला)", "price": "120/- Rs", "desc": "Authentic Maharashtrian drumstick curry", "tags": ["Veg"], "img": "img/shevga_masala.jpeg"},
+{"id": 51, "cat": "MAHARASHTRIAN SPECIAL", "name": "Baingan Bharta (बैंगन भर्ता)", "price": "120/- Rs", "desc": "Smoked and mashed eggplant with spices", "tags": ["Veg"], "img": "img/baingan_bharta.jpeg"},
+{"id": 52, "cat": "MAHARASHTRIAN SPECIAL", "name": "Shevbhaji (शेवभाजी)", "price": "90/- Rs", "desc": "Spicy curry topped with crispy sev", "tags": ["Veg"], "img": "img/shevbhaji.jpeg"},
+{"id": 53, "cat": "MAHARASHTRIAN SPECIAL", "name": "Matki Masala (मटकी मसाला)", "price": "120/- Rs", "desc": "Nutritious sprouted moth beans curry", "tags": ["Veg"], "img": "img/matki_masala.jpeg"},
+{"id": 54, "cat": "MAHARASHTRIAN SPECIAL", "name": "Lassan Methi (लसूण मेथी)", "price": "130/- Rs", "desc": "Fenugreek leaves cooked with garlic", "tags": ["Veg"], "img": "img/lassan_methi.jpeg"},
+{"id": 55, "cat": "MAHARASHTRIAN SPECIAL", "name": "Lassan Palak (लसूण पालक)", "price": "120/- Rs", "desc": "Creamy spinach gravy with a garlic punch", "tags": ["Veg"], "img": "img/lassan_palak.jpeg"},
+{"id": 56, "cat": "MAHARASHTRIAN SPECIAL", "name": "Masala Methi (मसाला मेथी)", "price": "120/- Rs", "desc": "Spiced fresh fenugreek leaves", "tags": ["Veg"], "img": "img/masala_methi.jpeg"},
+{"id": 57, "cat": "MAHARASHTRIAN SPECIAL", "name": "Plain Palak (प्लेन पालक)", "price": "100/- Rs", "desc": "Simple and healthy spinach preparation", "tags": ["Veg"], "img": "img/plain_palak.jpeg"},
+{"id": 58, "cat": "MAHARASHTRIAN SPECIAL", "name": "Kaju Masala (काजू मसाला)", "price": "150/- Rs", "desc": "Cashews in a rich and spicy gravy", "tags": ["Veg"], "img": "img/kaju_masala.jpeg"},
+{"id": 59, "cat": "MAHARASHTRIAN SPECIAL", "name": "Kaju Curry Sweet (काजू करी स्वीट)", "price": "160/- Rs", "desc": "Creamy and mild cashew nut curry", "tags": ["Veg"], "img": "img/kaju_curry_sweet.jpeg"},
+{"id": 60, "cat": "MAHARASHTRIAN SPECIAL", "name": "Bhendi Fry (भेंडी फ्राय)", "price": "100/- Rs", "desc": "Crispy fried okra with Indian spices", "tags": ["Veg"], "img": "img/bhendi_fry.jpeg"},
+{"id": 61, "cat": "MAHARASHTRIAN SPECIAL", "name": "Bhendi Masala (भेंडी मसाला)", "price": "130/- Rs", "desc": "Okra cooked in a savory masala base", "tags": ["Veg"], "img": "img/bhendi_masala.jpeg"},
+{"id": 62, "cat": "MAHARASHTRIAN SPECIAL", "name": "Aloo Matar (आलु मटर)", "price": "130/- Rs", "desc": "Classic potato and green peas curry", "tags": ["Veg"], "img": "img/aloo_matar.jpeg"},
+{"id": 63, "cat": "MAHARASHTRIAN SPECIAL", "name": "Dum Aloo (दम आलु)", "price": "120/- Rs", "desc": "Slow-cooked spiced potatoes", "tags": ["Veg"], "img": "img/dum_aloo.jpeg"},
+{"id": 64, "cat": "MAHARASHTRIAN SPECIAL", "name": "Mix Veg (मिक्स व्हेज)", "price": "150/- Rs", "desc": "Assorted vegetables in a spicy gravy", "tags": ["Veg"], "img": "img/mix_veg.jpeg"},
+{"id": 65, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Kolhapuri (व्हेज कोल्हापुरी)", "price": "170/- Rs", "desc": "Extremely spicy mixed vegetable curry", "tags": ["Veg"], "img": "img/veg_kolhapuri.jpeg"},
+{"id": 66, "cat": "MAHARASHTRIAN SPECIAL", "name": "Shev Tomato (शेव टमाटर)", "price": "120/- Rs", "desc": "Tomato based curry topped with sev", "tags": ["Veg"], "img": "img/shev_tomato.jpeg"},
+{"id": 67, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Kadai (व्हेज कढाई)", "price": "180/- Rs", "desc": "Vegetables cooked in a traditional kadai masala", "tags": ["Veg"], "img": "img/veg_kadai.jpeg"},
+{"id": 68, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Hungama (व्हेज हंगामा)", "price": "160/- Rs", "desc": "A medley of vegetables in a rich gravy", "tags": ["Veg"], "img": "img/veg_hungama.jpeg"},
+{"id": 69, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Sham Savera (व्हेज शाम सवेरा)", "price": "150/- Rs", "desc": "Spinach koftas stuffed with paneer in tomato gravy", "tags": ["Veg"], "img": "img/veg_sham_savera.jpeg"},
+{"id": 70, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Angara (व्हेज अंगारा)", "price": "160/- Rs", "desc": "Smoky flavored spicy mixed vegetable curry", "tags": ["Veg"], "img": "img/veg_angara.jpeg"},
+{"id": 71, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Kosha (व्हेज कोशा)", "price": "160/- Rs", "desc": "Slow cooked dry mixed vegetables", "tags": ["Veg"], "img": "img/veg_kosha.jpeg"},
+{"id": 72, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Tawa (व्हेज तवा)", "price": "160/- Rs", "desc": "Vegetables seared on a flat griddle with spices", "tags": ["Veg"], "img": "img/veg_tawa.jpeg"},
+{"id": 73, "cat": "MAHARASHTRIAN SPECIAL", "name": "Umar Handi Half/Full (उमर हांडी हाफ/फुल)", "price": "160/250/- Rs", "desc": "Signature vegetable handi preparation", "tags": ["Veg"], "img": "img/umar_handi.jpeg"},
+{"id": 74, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Maratha (व्हेज मराठा)", "price": "150/- Rs", "desc": "Spicy vegetable cutlets in a Maharashtrian gravy", "tags": ["Veg"], "img": "img/veg_maratha.jpeg"},
+{"id": 75, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Tiranga (व्हेज तिरंगा)", "price": "170/- Rs", "desc": "Three-layered vegetable curry representing the tricolor", "tags": ["Veg"], "img": "img/veg_tiranga.jpeg"},
+{"id": 76, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Bhuna (व्हेज भुना)", "price": "170/- Rs", "desc": "Vegetables roasted with a blend of dry spices", "tags": ["Veg"], "img": "img/veg_bhuna.jpeg"},
+{"id": 77, "cat": "MAHARASHTRIAN SPECIAL", "name": "Veg Patiyala (व्हेज पटीयाला)", "price": "160/- Rs", "desc": "Mixed vegetables wrapped in papad in a rich gravy", "tags": ["Veg"], "img": "img/veg_patiyala.jpeg"},
+{"id": 78, "cat": "MAHARASHTRIAN SPECIAL", "name": "Soyabean Masala (सोयाबीन मसाला)", "price": "120/- Rs", "desc": "Soya chunks cooked in a spicy masala", "tags": ["Veg"], "img": "img/soyabean_masala.jpeg"},
+{"id": 79, "cat": "MAHARASHTRIAN SPECIAL", "name": "Dal Tadka (दाल तडका)", "price": "120/- Rs", "desc": "Lentils tempered with ghee and aromatic spices", "tags": ["Veg"], "img": "img/dal_tadka.jpeg"},
+{"id": 80, "cat": "MAHARASHTRIAN SPECIAL", "name": "Dal Fry (दाल फ्राय)", "price": "100/- Rs", "desc": "Cumin and garlic tempered yellow lentils", "tags": ["Veg"], "img": "img/dal_fry.jpeg"},      
+
+{"id": 81, "cat": "ROTI", "name": "Plain Roti (प्लेन रोटी)", "price": "12/- Rs", "desc": "Soft whole wheat griddle bread", "tags": ["Veg"], "img": "img/plain_roti.jpeg"},
+{"id": 82, "cat": "ROTI", "name": "Butter Roti (बटर रोटी)", "price": "25/- Rs", "desc": "Whole wheat bread topped with butter", "tags": ["Veg"], "img": "img/butter_roti.jpeg"},
+{"id": 83, "cat": "ROTI", "name": "Plain Naan (प्लेन नान)", "price": "30/- Rs", "desc": "Leavened oven-baked flatbread", "tags": ["Veg"], "img": "img/plain_naan.jpeg"},
+{"id": 84, "cat": "ROTI", "name": "Butter Naan (बटर नान)", "price": "40/- Rs", "desc": "Soft naan topped with melted butter", "tags": ["Veg"], "img": "img/butter_naan.jpeg"},
+{"id": 85, "cat": "ROTI", "name": "Poli (पोळी)", "price": "20/- Rs", "desc": "Traditional homemade style chapati", "tags": ["Veg"], "img": "img/poli.jpeg"},
+{"id": 86, "cat": "ROTI", "name": "Butter Poli (बटर पोळी)", "price": "30/- Rs", "desc": "Chapati spread with fresh butter", "tags": ["Veg"], "img": "img/butter_poli.jpeg"},
+{"id": 87, "cat": "ROTI", "name": "Bajri Bhakri (बाजरी भाकरी)", "price": "20/- Rs", "desc": "Traditional pearl millet flatbread", "tags": ["Veg"], "img": "img/bajri_bhakri.jpeg"},
+{"id": 88, "cat": "ROTI", "name": "Butter Bajri Bhakri (बटर बाजरी भाकरी)", "price": "25/- Rs", "desc": "Bajri bhakri with a dollop of butter", "tags": ["Veg"], "img": "img/butter_bajri_bhakri.jpeg"},
+{"id": 89, "cat": "RICE", "name": "Veg Fried Rice (व्हेज फ्राईड राईस)", "price": "100/- Rs", "desc": "Stir-fried rice with crunchy vegetables", "tags": ["Veg"], "img": "img/veg_fried_rice.jpeg"},
+{"id": 90, "cat": "RICE", "name": "Steam Rice (स्टीम राईस)", "price": "60/- Rs", "desc": "Fluffy long-grain steamed rice", "tags": ["Veg"], "img": "img/steam_rice.jpeg"},
+{"id": 91, "cat": "RICE", "name": "Jeera Rice Half/Full (जीरा राईस हाफ/फुल)", "price": "60/100/- Rs", "desc": "Rice tempered with cumin seeds", "tags": ["Veg"], "img": "img/jeera_rice.jpeg"},
+{"id": 92, "cat": "RICE", "name": "Lemon Rice (लेमन राईस)", "price": "70/- Rs", "desc": "Tangy and aromatic lemon-infused rice", "tags": ["Veg"], "img": "img/lemon_rice.jpeg"},
+{"id": 93, "cat": "RICE", "name": "Veg Biryani (व्हेज बिर्याणी)", "price": "150/- Rs", "desc": "Aromatic layered rice dish with vegetables", "tags": ["Veg"], "img": "img/veg_biryani.jpeg"},
+{"id": 94, "cat": "RICE", "name": "Veg Pulav (व्हेज पुलाव)", "price": "140/- Rs", "desc": "Fragrant rice cooked with mixed vegetables", "tags": ["Veg"], "img": "img/veg_pulav.jpeg"},
+{"id": 95, "cat": "RICE", "name": "Dal Khichdi Half/Full (दाल खिचडी हाफ/फुल)", "price": "70/130/- Rs", "desc": "Comforting blend of rice and lentils", "tags": ["Veg"], "img": "img/dal_khichdi.jpeg"},
+{"id": 96, "cat": "RICE", "name": "Paneer Pulav (पनीर पुलाव)", "price": "160/- Rs", "desc": "Fragrant rice cooked with soft paneer cubes", "tags": ["Veg"], "img": "img/paneer_pulav.jpeg"},
 
 
-          
+{"id": 97, "cat": "HANDI SPECIAL", "name": "Shev Handi Half (शेव हांडी हाफ)", "price": "220/- Rs", "desc": "Spicy sev curry served in a traditional handi (Half)", "tags": ["Veg"], "img": "img/shev_handi.jpeg"},
+{"id": 98, "cat": "HANDI SPECIAL", "name": "Shev Handi Full (शेव हांडी फुल)", "price": "400/- Rs", "desc": "Spicy sev curry served in a traditional handi (Full)", "tags": ["Veg"], "img": "img/shev_handi.jpeg"},
+{"id": 99, "cat": "HANDI SPECIAL", "name": "Shevga Handi Half (शेवगा हांडी हाफ)", "price": "230/- Rs", "desc": "Drumstick curry in Maharashtrian spices (Half)", "tags": ["Veg"], "img": "img/shevga_handi.jpeg"},
+{"id": 100, "cat": "HANDI SPECIAL", "name": "Shevga Handi Full (शेवगा हांडी फुल)", "price": "450/- Rs", "desc": "Drumstick curry in Maharashtrian spices (Full)", "tags": ["Veg"], "img": "img/shevga_handi.jpeg"},
+{"id": 101, "cat": "HANDI SPECIAL", "name": "Baingan Handi Half (बैंगण हांडी हाफ)", "price": "230/- Rs", "desc": "Spiced eggplant curry (Half)", "tags": ["Veg"], "img": "img/baingan_handi.jpeg"},
+{"id": 102, "cat": "HANDI SPECIAL", "name": "Baingan Handi Full (बैंगण हांडी फुल)", "price": "450/- Rs", "desc": "Spiced eggplant curry (Full)", "tags": ["Veg"], "img": "img/baingan_handi.jpeg"},
+{"id": 103, "cat": "HANDI SPECIAL", "name": "Soyabean Handi Half (सोयाबीन हांडी हाफ)", "price": "230/- Rs", "desc": "Soya chunks in rich gravy (Half)", "tags": ["Veg"], "img": "img/soyabean_handi.jpeg"},
+{"id": 104, "cat": "HANDI SPECIAL", "name": "Soyabean Handi Full (सोयाबीन हांडी फुल)", "price": "450/- Rs", "desc": "Soya chunks in rich gravy (Full)", "tags": ["Veg"], "img": "img/soyabean_handi.jpeg"},
+{"id": 105, "cat": "HANDI SPECIAL", "name": "Dal Tadka Handi Half (दाल तडका हांडी हाफ)", "price": "250/- Rs", "desc": "Tempered lentils in handi style (Half)", "tags": ["Veg"], "img": "img/dal_tadka_handi.jpeg"},
+{"id": 106, "cat": "HANDI SPECIAL", "name": "Dal Tadka Handi Full (दाल तडका हांडी फुल)", "price": "460/- Rs", "desc": "Tempered lentils in handi style (Full)", "tags": ["Veg"], "img": "img/dal_tadka_handi.jpeg"},
+{"id": 107, "cat": "HANDI SPECIAL", "name": "Paneer Handi Half (पनीर हांडी हाफ)", "price": "280/- Rs", "desc": "Soft paneer in creamy handi gravy (Half)", "tags": ["Veg"], "img": "img/paneer_handi.jpeg"},
+{"id": 108, "cat": "HANDI SPECIAL", "name": "Paneer Handi Full (पनीर हांडी फुल)", "price": "580/- Rs", "desc": "Soft paneer in creamy handi gravy (Full)", "tags": ["Veg"], "img": "img/paneer_handi.jpeg"},
+{"id": 109, "cat": "HANDI SPECIAL", "name": "Kaju Handi Half (काजू हांडी हाफ)", "price": "280/- Rs", "desc": "Rich cashew nut curry (Half)", "tags": ["Veg"], "img": "img/kaju_handi.jpeg"},
+{"id": 110, "cat": "HANDI SPECIAL", "name": "Kaju Handi Full (काजू हांडी फुल)", "price": "580/- Rs", "desc": "Rich cashew nut curry (Full)", "tags": ["Veg"], "img": "img/kaju_handi.jpeg"},
+{"id": 111, "cat": "HANDI SPECIAL", "name": "Kaju Paneer Mix Handi Half (काजू पनीर मिक्स हांडी हाफ)", "price": "350/- Rs", "desc": "Cashew and paneer combination (Half)", "tags": ["Veg"], "img": "img/kaju_paneer_handi.jpeg"},
+{"id": 112, "cat": "HANDI SPECIAL", "name": "Kaju Paneer Mix Handi Full (काजू पनीर मिक्स हांडी फुल)", "price": "650/- Rs", "desc": "Cashew and paneer combination (Full)", "tags": ["Veg"], "img": "img/kaju_paneer_handi.jpeg"},
+{"id": 113, "cat": "NASHTA SPECIAL", "name": "Chaha (चहा)", "price": "10/- Rs", "desc": "Masala Tea", "tags": ["Veg"], "img": "img/tea.jpeg"},
+{"id": 114, "cat": "NASHTA SPECIAL", "name": "Dudh (दूध)", "price": "10/- Rs", "desc": "Hot Milk", "tags": ["Veg"], "img": "img/milk.jpeg"},
+{"id": 115, "cat": "NASHTA SPECIAL", "name": "Coffee (कॉफी)", "price": "15/- Rs", "desc": "Hot Coffee", "tags": ["Veg"], "img": "img/coffee.jpeg"},
+{"id": 116, "cat": "NASHTA SPECIAL", "name": "Kanda Pohe (कांदा पोहे)", "price": "20/- Rs", "desc": "Flattened rice with onions and spices", "tags": ["Veg"], "img": "img/kanda_pohe.jpeg"},
+{"id": 117, "cat": "NASHTA SPECIAL", "name": "Vadapav (वडापाव)", "price": "15/- Rs", "desc": "Spicy potato fritter in a bun", "tags": ["Veg"], "img": "img/vadapav.jpeg"},            
+              
 
+              
 
 
 
