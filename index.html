@@ -1207,6 +1207,7 @@
 <button class="tab" data-cat="ROTI">🫓 Roti & Bhakri (रोटी आणि भाकरी)</button>
 <button class="tab" data-cat="RICE">🍚 Rice (राईस)</button>
 <button class="tab" data-cat="NASHTA SPECIAL">☕ Tea & Coffee (चहा आणि कॉफी)</button>
+<button class="tab" data-cat="COLD DRINKS">COLD DRINKS</button>
                 </div>  
                 </div>
             </div>
@@ -1352,8 +1353,8 @@
         // Menu Data - FIXED VERSION
         const data = [
       
-  { "id": 1, "cat": "SOUPS", "name": "Cream Tomato Soup (क्रीम टोमॅटो सुप)", "price": "70/- Rs", "desc": "Creamy tomato soup", "tags": ["Veg"], "img": "img/cream_tomato_soup.jpeg" },
-  { "id": 2, "cat": "SOUPS", "name": "Tomato Soup (टोमॅटो सुप)", "price": "60/- Rs", "desc": "Fresh tomato soup", "tags": ["Veg"], "img": "img/tomato_soup.jpeg" },
+  { "id": 1, "cat": "SOUPS", "name": "Cream Tomato Soup (क्रीम टोमॅटो सुप)", "price": "90/- Rs", "desc": "Creamy tomato soup", "tags": ["Veg"], "img": "img/cream_tomato_soup.jpeg" },
+  { "id": 2, "cat": "SOUPS", "name": "Tomato Soup (टोमॅटो सुप)", "price": "70/- Rs", "desc": "Fresh tomato soup", "tags": ["Veg"], "img": "img/tomato_soup.jpeg" },
   { "id": 3, "cat": "SOUPS", "name": "Veg Manchow Soup (व्हेज मन्चाव सुप)", "price": "70/- Rs", "desc": "Spicy veg manchow soup", "tags": ["Veg"], "img": "img/veg_manchow_soup.jpeg" },
   { "id": 4, "cat": "SNACKS", "name": "Papad Roast (पापड रोस्ट)", "price": "20/- Rs", "desc": "Roasted papad", "tags": ["Veg"], "img": "img/papad_roast.jpeg" },
   { "id": 5, "cat": "SNACKS", "name": "Masala Papad (मसाला पापड)", "price": "35/- Rs", "desc": "Papad topped with masala", "tags": ["Veg"], "img": "img/masala_papad.jpeg" },
@@ -1368,7 +1369,10 @@
   { "id": 14, "cat": "BREAKFAST", "name": "Pav Vada (पाव वडा)", "price": "15/- Rs", "desc": "Single pav with vada", "tags": ["Veg"], "img": "img/pav_vada.jpeg" },
   { "id": 15, "cat": "BREAKFAST", "name": "Alu Vada (आलु वडा)", "price": "50/- Rs", "desc": "Potato fritters", "tags": ["Veg"], "img": "img/alu_vada.jpeg" },
   { "id": 16, "cat": "BREAKFAST", "name": "Vada Pav (वडा पाव)", "price": "15/- Rs", "desc": "Classic vada pav", "tags": ["Veg"], "img": "img/vada_pav.jpeg" },
+  { "id": 40, "cat": "BREAKFAST", "name": "Special Misal (स्पेशल मिसळ)", "price": "100/- Rs", "desc": "Spicy and tasty special misal pav", "tags": ["Veg"], "img": "img/special_missal.jpeg" },
 
+
+              
   { "id": 17, "cat": "STARTERS", "name": "Paneer Chilli Dry (पनिर चिल्ली ड्राय)", "price": "180/- Rs", "desc": "Spicy cottage cheese with chillies", "tags": ["Veg"], "img": "img/paneer_chilli_dry.jpeg" },
   { "id": 18, "cat": "STARTERS", "name": "Paneer Manchurian Dry (पनिर मन्चूरीयन ड्राय)", "price": "180/- Rs", "desc": "Paneer tossed in manchurian sauce", "tags": ["Veg"], "img": "img/paneer_manchurian_dry.jpeg" },
   { "id": 19, "cat": "STARTERS", "name": "Veg Manchurian (व्हेज मन्चूरीयन)", "price": "130/- Rs", "desc": "Vegetable balls in chinese sauce", "tags": ["Veg"], "img": "img/veg_manchurian.jpeg" },
@@ -1435,13 +1439,17 @@
 {"id": 78, "cat": "MAHARASHTRIAN SPECIAL", "name": "Soyabean Masala (सोयाबीन मसाला)", "price": "120/- Rs", "desc": "Soya chunks cooked in a spicy masala", "tags": ["Veg"], "img": "img/soyabean_masala.jpeg"},
 {"id": 79, "cat": "MAHARASHTRIAN SPECIAL", "name": "Dal Tadka (दाल तडका)", "price": "120/- Rs", "desc": "Lentils tempered with ghee and aromatic spices", "tags": ["Veg"], "img": "img/dal_tadka.jpeg"},
 {"id": 80, "cat": "MAHARASHTRIAN SPECIAL", "name": "Dal Fry (दाल फ्राय)", "price": "100/- Rs", "desc": "Cumin and garlic tempered yellow lentils", "tags": ["Veg"], "img": "img/dal_fry.jpeg"},      
+{ "id": 39, "cat": "MAHARASHTRIAN SPECIAL", "name": "Dal Batti (डाळ बाटी)", "price": "150/- Rs", "desc": "Authentic dal batti with ghee", "tags": ["Veg"], "img": "img/dal_batti.jpeg" },
 
+
+
+              
 {"id": 81, "cat": "ROTI", "name": "Plain Roti (प्लेन रोटी)", "price": "12/- Rs", "desc": "Soft whole wheat griddle bread", "tags": ["Veg"], "img": "img/plain_roti.jpeg"},
 {"id": 82, "cat": "ROTI", "name": "Butter Roti (बटर रोटी)", "price": "25/- Rs", "desc": "Whole wheat bread topped with butter", "tags": ["Veg"], "img": "img/butter_roti.jpeg"},
 {"id": 83, "cat": "ROTI", "name": "Plain Naan (प्लेन नान)", "price": "30/- Rs", "desc": "Leavened oven-baked flatbread", "tags": ["Veg"], "img": "img/plain_naan.jpeg"},
 {"id": 84, "cat": "ROTI", "name": "Butter Naan (बटर नान)", "price": "40/- Rs", "desc": "Soft naan topped with melted butter", "tags": ["Veg"], "img": "img/butter_naan.jpeg"},
-{"id": 85, "cat": "ROTI", "name": "Poli (पोळी)", "price": "20/- Rs", "desc": "Traditional homemade style chapati", "tags": ["Veg"], "img": "img/poli.jpeg"},
-{"id": 86, "cat": "ROTI", "name": "Butter Poli (बटर पोळी)", "price": "30/- Rs", "desc": "Chapati spread with fresh butter", "tags": ["Veg"], "img": "img/butter_poli.jpeg"},
+{"id": 85, "cat": "ROTI", "name": "Poli (पोळी)", "price": "15/- Rs", "desc": "Traditional homemade style chapati", "tags": ["Veg"], "img": "img/poli.jpeg"},
+{"id": 86, "cat": "ROTI", "name": "Butter Poli (बटर पोळी)", "price": "20/- Rs", "desc": "Chapati spread with fresh butter", "tags": ["Veg"], "img": "img/butter_poli.jpeg"},
 {"id": 87, "cat": "ROTI", "name": "Bajri Bhakri (बाजरी भाकरी)", "price": "20/- Rs", "desc": "Traditional pearl millet flatbread", "tags": ["Veg"], "img": "img/bajri_bhakri.jpeg"},
 {"id": 88, "cat": "ROTI", "name": "Butter Bajri Bhakri (बटर बाजरी भाकरी)", "price": "25/- Rs", "desc": "Bajri bhakri with a dollop of butter", "tags": ["Veg"], "img": "img/butter_bajri_bhakri.jpeg"},
 {"id": 89, "cat": "RICE", "name": "Veg Fried Rice (व्हेज फ्राईड राईस)", "price": "100/- Rs", "desc": "Stir-fried rice with crunchy vegetables", "tags": ["Veg"], "img": "img/veg_fried_rice.jpeg"},
@@ -1473,6 +1481,15 @@
 {"id": 113, "cat": "NASHTA SPECIAL", "name": "Chaha (चहा)", "price": "10/- Rs", "desc": "Masala Tea", "tags": ["Veg"], "img": "img/tea.jpeg"},
 {"id": 114, "cat": "NASHTA SPECIAL", "name": "Dudh (दूध)", "price": "10/- Rs", "desc": "Hot Milk", "tags": ["Veg"], "img": "img/milk.jpeg"},
 {"id": 115, "cat": "NASHTA SPECIAL", "name": "Coffee (कॉफी)", "price": "15/- Rs", "desc": "Hot Coffee", "tags": ["Veg"], "img": "img/coffee.jpeg"},
+
+{ "id": 41, "cat": "COLD DRINKS", "name": "Plain Taak (प्लेन ताक)", "price": "15/- Rs", "desc": "Refreshing plain buttermilk", "tags": ["Veg"], "img": "img/plain_tak.jpeg" },
+{ "id": 42, "cat": "COLD DRINKS", "name": "Masala Taak (मसाला ताक)", "price": "20/- Rs", "desc": "Spiced masala buttermilk", "tags": ["Veg"], "img": "img/masala_tak.jpeg" },
+{ "id": 43, "cat": "COLD DRINKS", "name": "Tirumala Special Lassi (तिरूमला स्पेशल लस्सी)", "price": "40/- Rs", "desc": "Thick and creamy special lassi", "tags": ["Veg"], "img": "img/special_lassi.jpeg" },
+{ "id": 44, "cat": "COLD DRINKS", "name": "Cold Drinks (थंड पेये)", "price": "As Per MRP", "desc": "Refreshing cold drinks", "tags": ["Veg"], "img": "img/cold_drinks.jpeg" },
+
+
+
+              
 // {"id": 116, "cat": "NASHTA SPECIAL", "name": "Kanda Pohe (कांदा पोहे)", "price": "20/- Rs", "desc": "Flattened rice with onions and spices", "tags": ["Veg"], "img": "img/kanda_pohe.jpeg"},
 // {"id": 117, "cat": "NASHTA SPECIAL", "name": "Vadapav (वडापाव)", "price": "15/- Rs", "desc": "Spicy potato fritter in a bun", "tags": ["Veg"], "img": "img/vadapav.jpeg"},            
               
